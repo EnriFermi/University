@@ -18,13 +18,13 @@ typedef struct slist{
 
 typedef stringNode* stringList;
 charList newC(){
-    charList p = malloc(sizeof(charList));
+    charList p = malloc(sizeof(charNode));
     p->next = NULL;
     p->chr = '\0';
     return p;
 }
 charList addC(charList p, char chr) {
-    p->next = malloc(sizeof(charList));
+    p->next = malloc(sizeof(charNode));
     p->chr = chr;
     p = p->next;
     p->next =NULL;
@@ -33,9 +33,10 @@ charList addC(charList p, char chr) {
 }
 char* listToString(charList l, int lSize) {
     int point = 0;
-    char *s = malloc(lSize);
+    char *s = (char *) malloc(lSize+1);
     while(l!=NULL) {
-        s[point++] = l->chr;
+        s[point] = l->chr;
+        point++;
         l = l->next;
     }
     return s;
@@ -48,7 +49,7 @@ void clearC(charList p) {
     }
 }
 stringList newS(){
-    stringList p = malloc(sizeof(stringList));
+    stringList p = malloc(sizeof(stringNode));
     p->next = NULL;
     p->prev = NULL;
     p->string = NULL;
@@ -56,7 +57,7 @@ stringList newS(){
 }
 stringList addS(stringList p, char* string) {
     stringList q = p->next;
-    p->next = malloc(sizeof(charList));
+    p->next = malloc(sizeof(stringNode));
     p->next->prev = p;
     p = p->next;
     p->next = q;
