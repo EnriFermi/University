@@ -1,0 +1,12 @@
+# ninja log v5
+0	34	1667198642148678074	CMakeFiles/univ.dir/1h/1hometask.c.o	7b61ec61e83dd2ff
+1	27	1667198642144678242	CMakeFiles/univ.dir/3p/3.2practice.c.o	5f8efcd6bee076f
+1	31	1667198642148678074	CMakeFiles/univ.dir/1p/practic1.c.o	d948e8a3efd68ed9
+1	34	1667198642148678074	CMakeFiles/univ.dir/2h/2hometask.c.o	e2ac2412bffefab6
+1	31	1667198642144678242	CMakeFiles/univ.dir/3p/3.3practice.c.o	24e8e628b1f94523
+1	27	1667198642144678242	CMakeFiles/univ.dir/2p/2practice.c.o	ed78d9d53ebae91a
+1	34	1667198642148678074	CMakeFiles/univ.dir/2l/2.c.o	947fa516c39037e4
+1	31	1667198642144678242	CMakeFiles/univ.dir/3h/3hometask.c.o	ffac17be0beeeab5
+0	14	1667198724557153923	build.ninja	79ff9c0179310474
+0	25	1667198724585152710	CMakeFiles/6homework.dir/6h/6homework.c.o	2cf51dd957b3f253
+25	38	1667198724597152190	6homework	35603b2da237c45a

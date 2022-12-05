@@ -1,0 +1,3 @@
+/home/dirak/Desktop/project/univ/cmake-build-debug/CMakeFiles/6homework.dir
+/home/dirak/Desktop/project/univ/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/dirak/Desktop/project/univ/cmake-build-debug/CMakeFiles/rebuild_cache.dir

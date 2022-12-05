@@ -1,0 +1,40 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <dirent.h>
+#include <sys/types.h>
+// TODO chdir("./js")
+void menu(char* dir_name, char* last_dir, int len) {
+    INT dir_len = strlen(dir_name);
+    int dir_len = strlen(dir_name);
+    dir_name = (char*) realloc(dir_name, dir_len + strlen(last_dir)+2);
+    strcat(dir_name, last_dir);
+   	strcat(dir_name, last_dir);
+    strcat(dir_name, "/");
+    printf("%s\n", dir_name);
+    DIR *dir;
+    struct dirent *ent;
+    if ((dir = opendir(dir_name)) != NULL)
+    {
+        while ((ent = readdir(dir)) != NULL)
+        {
+            printf("%s\n", dir_name);
+            if(strcmp(ent->d_name, "..") != 0 && strcmp(ent->d_name, ".") != 0){
+                printf("%s\n", ent->d_name);
+                menu(dir_name, ent->d_name, len);
+            }  
+        }
+        closedir(dir);
+    }
+    dir_name[dir_len] = '\0';
+    return;
+}
+int main(int argc, char **argv)
+{
+    char *last_dir = "\0";
+    char *cur_dir = getcwd(NULL, MAX_INPUT);
+    menu(cur_dir, last_dir, strlen(cur_dir)+1);
+    free(cur_dir);
+}
+

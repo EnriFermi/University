@@ -1,0 +1,5 @@
+ < file name1 arg1 arg2 | name2 arg1 arg2 | >> file1 name3  
+    >>file1<  file2    a a  |  a  |  a
+>>file1<file2 a a|a|a
+>>file1<file2   a a  |   a   |  a  
+    >>file1<  file2    a a  |  a  |  a || >> file a a| a
