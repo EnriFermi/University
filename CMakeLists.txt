@@ -1,0 +1,55 @@
+cmake_minimum_required(VERSION 3.23)
+project(univ)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(univ
+        1h/1hometask
+        1h/1hometask.c
+        1h/1hometask.zip
+        1l/1lesson
+        1l/1lesson.c
+        1p/practic1
+        1p/practic1.c
+        2h/2hometask
+        2h/2hometask.c
+        2h/2hometask.zip
+        2l/2
+        2l/2.c
+        2p/2practice
+        2p/2practice.c
+        3h/3hometask
+        3h/3hometask.c
+        3h/3hometask.zip
+        3p/3.2practice
+        3p/3.2practice.c
+        3p/3.3practice
+        3p/3.3practice.c
+        3p/3.4practice
+        3p/3.4practice.c
+        3p/3practice
+        4h/4.c
+        4p/4practice
+        4p/4practice.c
+        5h/5.1homework
+        5h/5.1homework.c
+        5h/5.2homework
+        5h/5.2homework.c
+        5h/5.5homework
+        5h/5.5homework.c
+        5h/5HMTSK.zip
+        6h/1.txt
+        6h/2.txt
+        6h/3.txt
+        6h/6homework
+        6h/6homework.c
+        6p/6practice
+        6p/6practice.c
+        6p/6practice.zip
+        contest
+        contest.c
+        file1.txt
+        helloworld
+        helloworld.c
+        output.txt
+        test)
